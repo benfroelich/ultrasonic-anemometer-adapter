@@ -1,0 +1,162 @@
+*$
+* TLV70215, TLV702-Q1(1.5V) and TLV70315
+*****************************************************************************
+* (C) Copyright 2017, 2012 Texas Instruments Incorporated. All rights reserved.
+*****************************************************************************
+** This model is designed as an aid for customers of Texas Instruments.
+** TI and its licensors and suppliers make no warranties, either expressed
+** or implied, with respect to this model, including the warranties of
+** merchantability or fitness for a particular purpose. The model is
+** provided solely on an "as is" basis. The entire risk as to its quality
+** and performance is with the customer.
+*****************************************************************************
+*
+* This model is subject to change without notice. Texas Instruments
+* Incorporated is not responsible for updating this model.
+*
+*****************************************************************************
+** Released by: WEBENCH Design Center, Texas Instruments Inc.
+* Part: TLV70215, TLV702-Q1(1.5V) and TLV70315
+* Date: 30MAR2017 
+* Model Type: Transient
+* Simulator: PSPICE
+* Simulator Version: 16.2.0.p001
+* EVM Order Number: 
+* EVM Users Guide: 
+* Datasheet: TLV702-SLVSAG6C -SEPTEMBER 2010-REVISED MARCH 2015
+*            TLV702Q1-SLVSC35B -AUGUST 2013-REVISED JUNE 2015
+*            TLV703-SBVS305 –AUGUST 2016-REVISED JANUARY 2017
+*
+* Model Version: Final 1.10
+*
+*****************************************************************************
+*
+* Updates:
+*
+* Final 1.10
+* Release to Web
+* <Made below changes to the model>
+* 1. Associated project file TLV702 with TLV702-Q1/TLV703.
+* 2. Output is isolated with input when EN voltage goes to zero.
+* 
+*
+* Final 1.00
+* Release to Web
+*
+*****************************************************************************
+*
+* Model Usage Notes:
+*
+* 1. The following features have been modeled
+*      a. Start-up time
+*      b. PSSR
+*      c. Enable/VIN shutdown
+*      d. Load and line regulation
+*      e. Load and line transients
+*      f. Internal current limit
+*      h. Model supports inverting topology
+*      
+* 2. Temperature effects & Ground/shutdown/quiescent current have not been modeled
+*****************************************************************************
+.SUBCKT TLV70215_TRANS IN EN OUT GND NC
+R_R3         GND FB  1.0E6  
+R_R10         0 NC  100MEG TC=0,0 
+E_E14         VZZ_INT 0 VALUE { V(VZZ, GND) }
+X_F1    VZZ VOUT_INT N15505691 VYY TLV70215_F1 
+R_R11         EN GND  1E6 TC=0,0 
+R_R4         FB N15505647  500k  
+X_S6    EN_OK 0 N15505647 OUT TLV70215_S6 
+V_V1         IN N15577606 0Vdc
+C_U1_C3         GND N15505751  1N  
+V_U1_V7         U1_N154966513 0 0.5Vdc
+E_U1_ABM8         U1_DROP 0 VALUE { (V(ISENSE) * V(U1_DROP_INT)/300m)    }
+E_U1_ABM6         U1_N15488677 0 VALUE { IF(V(UV_OK)> 0.6 & V(EN_OK) > 0.6, 
++ {VREF}, 0)    }
+R_U1_R3         U1_N15488677 U1_N15488381  {3.333e5*SQRT(TTRN)} TC=0,0 
+C_U1_C1         0 U1_N15488381  {1e-6*SQRT(TTRN)}  
+X_U1_U1         EN_INT U1_N15496735 U1_N154966513 EN_OK COMPHYS_BASIC_GEN
++  PARAMS: VDD=1 VSS=0 VTHRESH=0.5
+X_U1_U2         VIN_PRE U1_N15502244 U1_N154889573 UV_OK COMPHYS_BASIC_GEN
++  PARAMS: VDD=1 VSS=0 VTHRESH=0.5
+E_U1_E4         U1_N15488841 GND VALUE { V(U1_N15847160, 0) }
+R_U1_R4         U1_N15488775 U1_N15488397  1 TC=0,0 
+R_U1_R2         GND U1_N15488397  1G  
+C_U1_C2         0 U1_N15488397  1n  
+V_U1_V3         U1_N154889573 0 {UHYS}
+E_U1_ABM5         U1_N15847160 0 VALUE { MIN(V(U1_N15488397),  
++ MAX(V(VIN_PRE) - V(U1_DROP), 0))   }
+R_U1_R5         U1_N15488841 N15505751  10 TC=0,0 
+V_U1_V4         U1_N15502244 0 {UVLO}
+E_U1_ABM4         U1_N15488775 0 VALUE { V(U1_N15488381)  
++ * (ABS(V(N15506031)) + 1e-6)  
++ / (ABS(V(V_FBK)) + 1e-6)  }
+V_U1_V6         U1_N15496735 0 {VEN}
+E_U1_E3         U1_DROP_INT 0 TABLE { V(VIN_PRE, 0) } 
++ ( (2.25, 254m)(2.47, 240m)(2.75, 222m)(2.97, 213m)(3.25,
++  200m)(4,200m)(4.7,200m)(4.8, 200m) )
+R_U1_R1         GND U1_N15488381  1G  
+E_E12         N15505939 0 VALUE { V(VXX, GND) }
+E_E5         EN_INT 0 VALUE { V(EN, GND) }
+X_U2         OUT N15609388 d_d
+R_R9         0 NC  100MEG TC=0,0 
+E_E11         V_FBK 0 VALUE { V(FB, GND) }
+R_R12         IN N15609388  0.1 TC=0,0 
+R_R1         VXX N15505691  {RINP}  
+X_H1    VOUT_INT N15505647 ISENSE 0 TLV70215_H1 
+E_ABM1         N15571492 0 VALUE { MIN(V(N15505939), (V(Vzz_INT)+(ILIM*ROUT))) 
++    }
+R_R2         N15505751 VXX  {PSRR*RINP}  
+C_C1         VXX N15505691  {1/(6.28*RINP*POLE)}  
+R_R6         N15571917 VYY  1 TC=0,0 
+C_C2         VXX N15505751  {1/(6.28*PSRR*RINP*ZERO)}  
+X_S1    EN_OK 0 N15577606 N15505691 TLV70215_S1 
+E_E6         VIN_PRE 0 VALUE { V(IN, GND) }
+E_E13         N15571917 GND VALUE { V(N15571492, 0) }
+R_R5         VZZ VYY  {ROUT}  
+E_E15         N15506031 0 VALUE { V(VOUT_INT, GND) }
+C_C3         VYY GND  1n  
+C_C4         GND N15505691  1n  TC=0,0 
+.PARAM  psrr=398.1u uvlo=1.9 ilim=500ma ven=0.9v pole=15k zero=200k rinp=1e6
++  ttrn=72.5u rout=1m vref=1.0v uhys=100mv
+.ENDS TLV70215_TRANS
+*$
+.subckt TLV70215_F1 1 2 3 4  
+F_F1         3 4 VF_F1 1
+VF_F1         1 2 0V
+.ends TLV70215_F1
+*$
+.subckt TLV70215_S6 1 2 3 4  
+S_S6         3 4 1 2 _S6
+RS_S6         1 2 1G
+.MODEL         _S6 VSWITCH Roff=1e6 Ron=1m Voff=0.1 Von=0.9
+.ends TLV70215_S6
+*$
+.subckt TLV70215_H1 1 2 3 4  
+H_H1         3 4 VH_H1 1
+VH_H1         1 2 0V
+.ends TLV70215_H1
+*$
+.subckt TLV70215_S1 1 2 3 4  
+S_S1         3 4 1 2 _S1
+RS_S1         1 2 1G
+.MODEL         _S1 VSWITCH Roff=1e3 Ron=100 Voff=0.0V Von=1
+.ends TLV70215_S1
+*$
+*********************************///////////
+.SUBCKT COMPHYS_BASIC_GEN INP INM HYS OUT PARAMS: VDD=1 VSS=0 VTHRESH=0.5	
+EIN INP1 INM1 INP INM 1 
+EHYS INP1 INP2 VALUE { IF( V(1) > {VTHRESH},-V(HYS),0) }
+EOUT OUT 0 VALUE { IF( V(INP2)>V(INM1), {VDD} ,{VSS}) }
+R1 OUT 1 1
+C1 1 0 5n
+RINP1 INP1 0 1K
+.ENDS COMPHYS_BASIC_GEN
+*$
+.subckt d_d 1 2
+d1 1 2 dd
+.model dd d
++ is=1e-015
++ n=0.01
++ tt=1e-011
+.ends d_d
+*$

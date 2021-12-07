@@ -1,0 +1,8 @@
+* a dual model for opax322.lib
+.subckt opa2322 outa ina- ina+ vee inb+ inb- outb vcc
+.include opax322.lib
+
+* .subckt OPAx322 IN+ IN- VCC VEE OUT  
+XU1A ina+ ina- vcc vee outa opax322
+XU1B inb+ inb- vcc vee outb opax322
+.ends

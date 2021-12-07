@@ -1,0 +1,160 @@
+(ExpressProject "TLV70215_TRANS"
+  (ProjectVersion "19981106")
+  (ProjectType "Analog or A/D Mixed Mode")
+  (Folder "Design Resources"
+    (Folder "Library"
+      (File ".\tlv70215_trans.olb"
+        (Type "Schematic Library")))
+    (NoModify)
+    (File "tlv70215_trans.dsn"
+      (Type "Schematic Design"))
+    (BuildFileAddedOrDeleted "x")
+    (CompileFileAddedOrDeleted "x")
+    (RootChangedForceReNetlist "x")
+    (PSPICE_Regenerate_Netlist_Flag "FALSE")
+    (PSPICE_DoNot_Show_WarningDlg "TRUE"))
+  (Folder "Outputs")
+  (Folder "PSpice Resources"
+    (Folder "Simulation Profiles"
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\tlv70215_trans-pspicefiles\startup_sim\trans.sim"
+        (DisplayName "Startup_Sim-trans")
+        (Type "PSpice Profile"))
+      (ActiveProfile ".\tlv70215_trans-pspicefiles\startup_sim\trans.sim"))
+    (Folder "Stimulus Files"
+      (Sort User))
+    (Folder "Include Files"
+      (Sort User))
+    (Folder "Model Libraries"
+      (Sort User)
+      (File ".\tlv70215_trans.lib"
+        (Type "PSpiceLibrary")
+        (DisplayName ".\tlv70215_trans.lib"))))
+  (DefaultLibraryBrowseDirectory "library\PSpice")
+  (PartMRUSelector
+    (TLV70218_TRANS
+      (FullPartName "TLV70218_TRANS.Normal")
+      (LibraryName
+         "D:\X0248648_DATA\BUG FIX\TLV70218\ACTIVE_WORK_KARMIC\PSPICE\TLV70218_PSPICE_TRANS\TLV70218_TRANS.OLB")
+      (DeviceIndex "0"))
+    (TLV70230_TRANS
+      (FullPartName "TLV70230_TRANS.Normal")
+      (LibraryName
+         "C:\ELABKARMIC_WS\ELABKARMIC_DS\PART_NUMBERS\TLV70230\ACTIVE_WORK_KARMIC\PSPICE\TLV70230_PSPICE_TRANS\TLV70230_TRANS.OLB")
+      (DeviceIndex "0"))
+    (0
+      (LibraryName "C:\CADENCE\SPB_16.2\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
+    (VDC
+      (FullPartName "VDC.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_16.2\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+      (DeviceIndex "0"))
+    (PARAM
+      (FullPartName "PARAM.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_16.0\TOOLS\CAPTURE\LIBRARY\PSPICE\SPECIAL.OLB")
+      (DeviceIndex "0"))
+    (IDC
+      (FullPartName "IDC.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_16.0\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+      (DeviceIndex "0"))
+    (TLV70243_TRANS
+      (FullPartName "TLV70243_TRANS.Normal")
+      (LibraryName
+         "C:\ELABKARMIC_WS\ELABKARMIC_DS\PART_NUMBERS\TLV70243\ACTIVE_WORK_KARMIC\PSPICE\TLV70243_PSPICE_TRANS\TLV70243_TRANS.OLB")
+      (DeviceIndex "0"))
+    (TLV702285_TRANS
+      (FullPartName "TLV702285_TRANS.Normal")
+      (LibraryName
+         "E:\AA_BHUSHAN\PSPICE_WORK\LDO\TLV702\TLV702-Q1_27OCT\TLV702285\ACTIVE_WORK_KARMIC\PSPICE\TLV702285_PSPICE_TRANS\TLV702285_TRANS.OLB")
+      (DeviceIndex "0"))
+    (D_D
+      (FullPartName "D_D.Normal")
+      (LibraryName "E:\AA_BHUSHAN\INTERNALLIBRARIES\SB0204_DIODES\DIODES.OLB")
+      (DeviceIndex "0"))
+    (TLV70212DBVT
+      (FullPartName "TLV70212DBVT.Normal")
+      (LibraryName
+         "\\KARMX0211415\PSPICE\USERS\BHUSHAN\SHRIKANT\LDO\TLV70212\ORCAD\2015-03-13_09-08-52.OLB")
+      (DeviceIndex "0"))
+    (TLV70212DBV_AVG
+      (FullPartName "TLV70212DBV_AVG.Normal")
+      (LibraryName
+         "\\KARMX0211415\PSPICE\USERS\BHUSHAN\SHRIKANT\LDO\TLV70212\ORCAD\TLV70212DBV_AVG.OLB")
+      (DeviceIndex "0"))
+    (TLV70212DBV_TRANS
+      (FullPartName "TLV70212DBV_TRANS.Normal")
+      (LibraryName
+         "\\KARMX0211415\PSPICE\USERS\BHUSHAN\SHRIKANT\LDO\TLV70212\ORCAD\TLV70212DBV_TRANS.OLB")
+      (DeviceIndex "0"))
+    (AND2_BASIC_GEN
+      (FullPartName "AND2_BASIC_GEN.Normal")
+      (LibraryName "E:\AA_BHUSHAN\INTERNALLIBRARIES\SB0101_LOGIC\GATES_GEN.OLB")
+      (DeviceIndex "0"))
+    (S
+      (FullPartName "S.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_16.2\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
+      (DeviceIndex "0"))
+    (R
+      (FullPartName "R.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_16.2\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
+      (DeviceIndex "0"))
+    (ABM/I
+      (FullPartName "ABM/I.Normal")
+      (LibraryName "C:\CADENCE\SPB_16.0\TOOLS\CAPTURE\LIBRARY\PSPICE\ABM.OLB")
+      (DeviceIndex "0"))
+    (ABM2
+      (FullPartName "ABM2.Normal")
+      (LibraryName "C:\CADENCE\SPB_16.0\TOOLS\CAPTURE\LIBRARY\PSPICE\ABM.OLB")
+      (DeviceIndex "0"))
+    (C
+      (FullPartName "C.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_16.2\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
+      (DeviceIndex "0"))
+    (VPULSE
+      (FullPartName "VPULSE.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_16.0\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+      (DeviceIndex "0"))
+    (VAC
+      (FullPartName "VAC.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_16.0\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+      (DeviceIndex "0"))
+    (GND
+      (LibraryName "C:\CADENCE\SPB_16.2\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
+    (BUF_DELAY_BASIC_GEN
+      (FullPartName "BUF_DELAY_BASIC_GEN.Normal")
+      (LibraryName "E:\AA_BHUSHAN\INTERNALLIBRARIES\SB0101_LOGIC\GATES_GEN.OLB")
+      (DeviceIndex "0"))
+    (BUF_BASIC_GEN
+      (FullPartName "BUF_BASIC_GEN.Normal")
+      (LibraryName "E:\AA_BHUSHAN\INTERNALLIBRARIES\SB0101_LOGIC\GATES_GEN.OLB")
+      (DeviceIndex "0"))
+    (LP5910-1P5DRV_TRANS
+      (FullPartName "LP5910-1P5DRV_TRANS.Normal")
+      (LibraryName
+         "E:\AA_BHUSHAN\PSPICE_WORK\LDO\LP5910_NEW\LP5910-1P5\ORCAD\LP5910-1P5DRV_TRANS.OLB")
+      (DeviceIndex "0"))
+    (ABM1
+      (FullPartName "ABM1.Normal")
+      (LibraryName "C:\CADENCE\SPB_16.2\TOOLS\CAPTURE\LIBRARY\PSPICE\ABM.OLB")
+      (DeviceIndex "0")))
+  (MPSSessionName "x0248648")
+  (LastUsedLibraryBrowseDirectory
+     "\\Karmx0211415\pspice\users\Bhushan\shrikant\LDO\TLV70212\Orcad")
+  (GlobalState
+    (FileView
+      (Path "Outputs"))
+    (HierarchyView)
+    (Doc
+      (Type "COrCapturePMDoc")
+      (Frame
+        (Placement "44 2 3 -1 -1 -8 -30 0 200 0 275"))
+      (Tab 0))))

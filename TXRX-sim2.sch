@@ -1,0 +1,779 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 6
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:Speaker_Ultrasound LS?
+U 1 1 5FB59EB0
+P 7350 3800
+AR Path="/5FB59EB0" Ref="LS?"  Part="1" 
+AR Path="/5FB4FEC9/5FB59EB0" Ref="LS1"  Part="1" 
+AR Path="/5FBC52CA/5FB59EB0" Ref="LS2"  Part="1" 
+AR Path="/5FBC797C/5FB59EB0" Ref="LS3"  Part="1" 
+AR Path="/5FBC8293/5FB59EB0" Ref="LS4"  Part="1" 
+AR Path="/618A2361/5FB4FEC9/5FB59EB0" Ref="LS?"  Part="1" 
+AR Path="/618A2361/5FBC52CA/5FB59EB0" Ref="LS?"  Part="1" 
+AR Path="/618A2361/5FBC797C/5FB59EB0" Ref="LS?"  Part="1" 
+AR Path="/618A2361/5FBC8293/5FB59EB0" Ref="LS?"  Part="1" 
+AR Path="/618B560C/5FB59EB0" Ref="LS1"  Part="1" 
+AR Path="/618B562D/5FB59EB0" Ref="LS2"  Part="1" 
+AR Path="/618B5632/5FB59EB0" Ref="LS3"  Part="1" 
+AR Path="/618B5637/5FB59EB0" Ref="LS4"  Part="1" 
+F 0 "LS1" H 7525 3796 50  0000 L CNN
+F 1 "Speaker_Ultrasound" H 7525 3705 50  0000 L CNN
+F 2 "" H 7315 3750 50  0001 C CNN
+F 3 "~" H 7315 3750 50  0001 C CNN
+F 4 "C" H 7350 3800 50  0001 C CNN "Spice_Primitive"
+F 5 "2nF" H 7350 3800 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 7350 3800 50  0001 C CNN "Spice_Netlist_Enabled"
+	1    7350 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 5FB59EB6
+P 7000 3850
+AR Path="/5FB59EB6" Ref="R?"  Part="1" 
+AR Path="/5FB4FEC9/5FB59EB6" Ref="R3"  Part="1" 
+AR Path="/5FBC52CA/5FB59EB6" Ref="R5"  Part="1" 
+AR Path="/5FBC797C/5FB59EB6" Ref="R7"  Part="1" 
+AR Path="/5FBC8293/5FB59EB6" Ref="R9"  Part="1" 
+AR Path="/618A2361/5FB4FEC9/5FB59EB6" Ref="R?"  Part="1" 
+AR Path="/618A2361/5FBC52CA/5FB59EB6" Ref="R?"  Part="1" 
+AR Path="/618A2361/5FBC797C/5FB59EB6" Ref="R?"  Part="1" 
+AR Path="/618A2361/5FBC8293/5FB59EB6" Ref="R?"  Part="1" 
+AR Path="/618B560C/5FB59EB6" Ref="R3"  Part="1" 
+AR Path="/618B562D/5FB59EB6" Ref="R5"  Part="1" 
+AR Path="/618B5632/5FB59EB6" Ref="R7"  Part="1" 
+AR Path="/618B5637/5FB59EB6" Ref="R9"  Part="1" 
+F 0 "R3" H 7068 3896 50  0000 L CNN
+F 1 "1.8k" H 7068 3805 50  0000 L CNN
+F 2 "" V 7040 3840 50  0001 C CNN
+F 3 "~" H 7000 3850 50  0001 C CNN
+	1    7000 3850
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6350 3550 6350 3700
+Wire Wire Line
+	7000 3550 7000 3700
+Wire Wire Line
+	7000 3550 7150 3650
+Wire Wire Line
+	7150 3650 7150 3800
+Connection ~ 7000 3550
+Wire Wire Line
+	7150 3900 7150 4050
+Wire Wire Line
+	7150 4050 7000 4150
+Wire Wire Line
+	6350 4000 6350 4150
+Wire Wire Line
+	7000 4000 7000 4150
+Connection ~ 7000 4150
+Wire Wire Line
+	6350 3550 6700 3550
+Wire Wire Line
+	6350 4150 6700 4150
+$Comp
+L power:GND #PWR?
+U 1 1 5FB59EC8
+P 5050 4550
+AR Path="/5FB59EC8" Ref="#PWR?"  Part="1" 
+AR Path="/5FB4FEC9/5FB59EC8" Ref="#PWR017"  Part="1" 
+AR Path="/5FBC52CA/5FB59EC8" Ref="#PWR023"  Part="1" 
+AR Path="/5FBC797C/5FB59EC8" Ref="#PWR029"  Part="1" 
+AR Path="/5FBC8293/5FB59EC8" Ref="#PWR035"  Part="1" 
+AR Path="/618A2361/5FB4FEC9/5FB59EC8" Ref="#PWR?"  Part="1" 
+AR Path="/618A2361/5FBC52CA/5FB59EC8" Ref="#PWR?"  Part="1" 
+AR Path="/618A2361/5FBC797C/5FB59EC8" Ref="#PWR?"  Part="1" 
+AR Path="/618A2361/5FBC8293/5FB59EC8" Ref="#PWR?"  Part="1" 
+AR Path="/618B560C/5FB59EC8" Ref="#PWR023"  Part="1" 
+AR Path="/618B562D/5FB59EC8" Ref="#PWR032"  Part="1" 
+AR Path="/618B5632/5FB59EC8" Ref="#PWR041"  Part="1" 
+AR Path="/618B5637/5FB59EC8" Ref="#PWR050"  Part="1" 
+F 0 "#PWR017" H 5050 4300 50  0001 C CNN
+F 1 "GND" H 5055 4377 50  0000 C CNN
+F 2 "" H 5050 4550 50  0001 C CNN
+F 3 "" H 5050 4550 50  0001 C CNN
+	1    5050 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5FB59ECE
+P 5050 3500
+AR Path="/5FB59ECE" Ref="#PWR?"  Part="1" 
+AR Path="/5FB4FEC9/5FB59ECE" Ref="#PWR016"  Part="1" 
+AR Path="/5FBC52CA/5FB59ECE" Ref="#PWR022"  Part="1" 
+AR Path="/5FBC797C/5FB59ECE" Ref="#PWR028"  Part="1" 
+AR Path="/5FBC8293/5FB59ECE" Ref="#PWR034"  Part="1" 
+AR Path="/618A2361/5FB4FEC9/5FB59ECE" Ref="#PWR?"  Part="1" 
+AR Path="/618A2361/5FBC52CA/5FB59ECE" Ref="#PWR?"  Part="1" 
+AR Path="/618A2361/5FBC797C/5FB59ECE" Ref="#PWR?"  Part="1" 
+AR Path="/618A2361/5FBC8293/5FB59ECE" Ref="#PWR?"  Part="1" 
+AR Path="/618B560C/5FB59ECE" Ref="#PWR022"  Part="1" 
+AR Path="/618B562D/5FB59ECE" Ref="#PWR031"  Part="1" 
+AR Path="/618B5632/5FB59ECE" Ref="#PWR040"  Part="1" 
+AR Path="/618B5637/5FB59ECE" Ref="#PWR049"  Part="1" 
+F 0 "#PWR016" H 5050 3250 50  0001 C CNN
+F 1 "GND" H 5055 3327 50  0000 C CNN
+F 2 "" H 5050 3500 50  0001 C CNN
+F 3 "" H 5050 3500 50  0001 C CNN
+	1    5050 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5050 3500 5050 3450
+Wire Wire Line
+	5050 3050 5050 2950
+Wire Wire Line
+	5050 2950 5250 2950
+Text Notes 5900 4300 0    50   ~ 0
+1:8.2
+Connection ~ 6700 4150
+Wire Wire Line
+	6700 4150 7000 4150
+$Comp
+L power:GND #PWR?
+U 1 1 5FB59EE2
+P 6700 4400
+AR Path="/5FB59EE2" Ref="#PWR?"  Part="1" 
+AR Path="/5FB4FEC9/5FB59EE2" Ref="#PWR018"  Part="1" 
+AR Path="/5FBC52CA/5FB59EE2" Ref="#PWR024"  Part="1" 
+AR Path="/5FBC797C/5FB59EE2" Ref="#PWR030"  Part="1" 
+AR Path="/5FBC8293/5FB59EE2" Ref="#PWR036"  Part="1" 
+AR Path="/618A2361/5FB4FEC9/5FB59EE2" Ref="#PWR?"  Part="1" 
+AR Path="/618A2361/5FBC52CA/5FB59EE2" Ref="#PWR?"  Part="1" 
+AR Path="/618A2361/5FBC797C/5FB59EE2" Ref="#PWR?"  Part="1" 
+AR Path="/618A2361/5FBC8293/5FB59EE2" Ref="#PWR?"  Part="1" 
+AR Path="/618B560C/5FB59EE2" Ref="#PWR024"  Part="1" 
+AR Path="/618B562D/5FB59EE2" Ref="#PWR033"  Part="1" 
+AR Path="/618B5632/5FB59EE2" Ref="#PWR042"  Part="1" 
+AR Path="/618B5637/5FB59EE2" Ref="#PWR051"  Part="1" 
+F 0 "#PWR018" H 6700 4150 50  0001 C CNN
+F 1 "GND" H 6705 4227 50  0000 C CNN
+F 2 "" H 6700 4400 50  0001 C CNN
+F 3 "" H 6700 4400 50  0001 C CNN
+	1    6700 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Transformer_SP_1S T?
+U 1 1 5FB59EED
+P 5750 3850
+AR Path="/5FB59EED" Ref="T?"  Part="1" 
+AR Path="/5FB4FEC9/5FB59EED" Ref="T1"  Part="1" 
+AR Path="/5FBC52CA/5FB59EED" Ref="T2"  Part="1" 
+AR Path="/5FBC797C/5FB59EED" Ref="T3"  Part="1" 
+AR Path="/5FBC8293/5FB59EED" Ref="T4"  Part="1" 
+AR Path="/618A2361/5FB4FEC9/5FB59EED" Ref="T?"  Part="1" 
+AR Path="/618A2361/5FBC52CA/5FB59EED" Ref="T?"  Part="1" 
+AR Path="/618A2361/5FBC797C/5FB59EED" Ref="T?"  Part="1" 
+AR Path="/618A2361/5FBC8293/5FB59EED" Ref="T?"  Part="1" 
+AR Path="/618B560C/5FB59EED" Ref="T1"  Part="1" 
+AR Path="/618B562D/5FB59EED" Ref="T2"  Part="1" 
+AR Path="/618B5632/5FB59EED" Ref="T3"  Part="1" 
+AR Path="/618B5637/5FB59EED" Ref="T4"  Part="1" 
+F 0 "T1" H 5750 4228 50  0000 C CNN
+F 1 "Transformer_SP_1S" H 5750 4137 50  0000 C CNN
+F 2 "" H 5750 3850 50  0001 C CNN
+F 3 "~" H 5750 3850 50  0001 C CNN
+F 4 "X" H 5750 3850 50  0001 C CNN "Spice_Primitive"
+F 5 "transformer1" H 5750 3850 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 5750 3850 50  0001 C CNN "Spice_Netlist_Enabled"
+F 7 "xf.subcircuit" H 5750 3850 50  0001 C CNN "Spice_Lib_File"
+	1    5750 3850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6150 4150 6350 4150
+Wire Wire Line
+	6150 4050 6150 4150
+Connection ~ 6350 4150
+Wire Wire Line
+	6150 3650 6150 3550
+Wire Wire Line
+	6150 3550 6350 3550
+Connection ~ 6350 3550
+$Comp
+L Transistor_FET:2N7002 M?
+U 1 1 5FB59EFE
+P 4950 3250
+AR Path="/5FB59EFE" Ref="M?"  Part="1" 
+AR Path="/5FB4FEC9/5FB59EFE" Ref="M1"  Part="1" 
+AR Path="/5FBC52CA/5FB59EFE" Ref="M3"  Part="1" 
+AR Path="/5FBC797C/5FB59EFE" Ref="M5"  Part="1" 
+AR Path="/5FBC8293/5FB59EFE" Ref="M7"  Part="1" 
+AR Path="/618A2361/5FB4FEC9/5FB59EFE" Ref="M?"  Part="1" 
+AR Path="/618A2361/5FBC52CA/5FB59EFE" Ref="M?"  Part="1" 
+AR Path="/618A2361/5FBC797C/5FB59EFE" Ref="M?"  Part="1" 
+AR Path="/618A2361/5FBC8293/5FB59EFE" Ref="M?"  Part="1" 
+AR Path="/618B560C/5FB59EFE" Ref="M1"  Part="1" 
+AR Path="/618B562D/5FB59EFE" Ref="M3"  Part="1" 
+AR Path="/618B5632/5FB59EFE" Ref="M5"  Part="1" 
+AR Path="/618B5637/5FB59EFE" Ref="M7"  Part="1" 
+F 0 "M1" H 4800 3350 50  0000 L CNN
+F 1 "N7002" H 4750 3450 50  0000 L CNN
+F 2 "" H 4925 3250 50  0001 C CNN
+F 3 "" H 4925 3250 50  0001 C CNN
+F 4 "X" H 4950 3250 50  0001 C CNN "Spice_Primitive"
+F 5 "N7002" H 4950 3250 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 4950 3250 50  0001 C CNN "Spice_Netlist_Enabled"
+F 7 "2N7002.subcircuit" H 4950 3250 50  0001 C CNN "Spice_Lib_File"
+F 8 "3 1 2" H 4950 3250 50  0001 C CNN "Spice_Node_Sequence"
+	1    4950 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5050 4500 5050 4550
+$Comp
+L Transistor_FET:2N7002 M?
+U 1 1 5FB59F0A
+P 4950 4300
+AR Path="/5FB59F0A" Ref="M?"  Part="1" 
+AR Path="/5FB4FEC9/5FB59F0A" Ref="M2"  Part="1" 
+AR Path="/5FBC52CA/5FB59F0A" Ref="M4"  Part="1" 
+AR Path="/5FBC797C/5FB59F0A" Ref="M6"  Part="1" 
+AR Path="/5FBC8293/5FB59F0A" Ref="M8"  Part="1" 
+AR Path="/618A2361/5FB4FEC9/5FB59F0A" Ref="M?"  Part="1" 
+AR Path="/618A2361/5FBC52CA/5FB59F0A" Ref="M?"  Part="1" 
+AR Path="/618A2361/5FBC797C/5FB59F0A" Ref="M?"  Part="1" 
+AR Path="/618A2361/5FBC8293/5FB59F0A" Ref="M?"  Part="1" 
+AR Path="/618B560C/5FB59F0A" Ref="M2"  Part="1" 
+AR Path="/618B562D/5FB59F0A" Ref="M4"  Part="1" 
+AR Path="/618B5632/5FB59F0A" Ref="M6"  Part="1" 
+AR Path="/618B5637/5FB59F0A" Ref="M8"  Part="1" 
+F 0 "M2" H 5200 4350 50  0000 L CNN
+F 1 "N7002" H 5200 4250 50  0000 L CNN
+F 2 "" H 4925 4300 50  0001 C CNN
+F 3 "" H 4925 4300 50  0001 C CNN
+F 4 "X" H 4950 4300 50  0001 C CNN "Spice_Primitive"
+F 5 "N7002" H 4950 4300 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 4950 4300 50  0001 C CNN "Spice_Netlist_Enabled"
+F 7 "2N7002.subcircuit" H 4950 4300 50  0001 C CNN "Spice_Lib_File"
+F 8 "3 1 2" H 4950 4300 50  0001 C CNN "Spice_Node_Sequence"
+	1    4950 4300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5350 3650 5250 3650
+$Comp
+L Device:C C?
+U 1 1 5FB59F11
+P 6350 3850
+AR Path="/5FB59F11" Ref="C?"  Part="1" 
+AR Path="/5FB4FEC9/5FB59F11" Ref="C8"  Part="1" 
+AR Path="/5FBC52CA/5FB59F11" Ref="C10"  Part="1" 
+AR Path="/5FBC797C/5FB59F11" Ref="C12"  Part="1" 
+AR Path="/5FBC8293/5FB59F11" Ref="C14"  Part="1" 
+AR Path="/618A2361/5FB4FEC9/5FB59F11" Ref="C?"  Part="1" 
+AR Path="/618A2361/5FBC52CA/5FB59F11" Ref="C?"  Part="1" 
+AR Path="/618A2361/5FBC797C/5FB59F11" Ref="C?"  Part="1" 
+AR Path="/618A2361/5FBC8293/5FB59F11" Ref="C?"  Part="1" 
+AR Path="/618B560C/5FB59F11" Ref="C6"  Part="1" 
+AR Path="/618B562D/5FB59F11" Ref="C8"  Part="1" 
+AR Path="/618B5632/5FB59F11" Ref="C10"  Part="1" 
+AR Path="/618B5637/5FB59F11" Ref="C12"  Part="1" 
+F 0 "C8" H 6465 3896 50  0000 L CNN
+F 1 "1500p" H 6465 3805 50  0000 L CNN
+F 2 "" H 6388 3700 50  0001 C CNN
+F 3 "~" H 6350 3850 50  0001 C CNN
+	1    6350 3850
+	1    0    0    -1  
+$EndComp
+Text Notes 5850 3300 0    50   ~ 0
++PSPICE\n.tran 100n 0.6m\n;.ic V(TF_PWR)=9.1\n;.OPTIONS GMIN=100F
+$Comp
+L Driver_FET:TC4427A U?
+U 1 1 5FB59F1D
+P 4350 3950
+AR Path="/5FB59F1D" Ref="U?"  Part="1" 
+AR Path="/5FB4FEC9/5FB59F1D" Ref="U5"  Part="1" 
+AR Path="/5FBC52CA/5FB59F1D" Ref="U6"  Part="1" 
+AR Path="/5FBC797C/5FB59F1D" Ref="U7"  Part="1" 
+AR Path="/5FBC8293/5FB59F1D" Ref="U8"  Part="1" 
+AR Path="/618A2361/5FB4FEC9/5FB59F1D" Ref="U?"  Part="1" 
+AR Path="/618A2361/5FBC52CA/5FB59F1D" Ref="U?"  Part="1" 
+AR Path="/618A2361/5FBC797C/5FB59F1D" Ref="U?"  Part="1" 
+AR Path="/618A2361/5FBC8293/5FB59F1D" Ref="U?"  Part="1" 
+AR Path="/618B560C/5FB59F1D" Ref="U3"  Part="1" 
+AR Path="/618B562D/5FB59F1D" Ref="U4"  Part="1" 
+AR Path="/618B5632/5FB59F1D" Ref="U5"  Part="1" 
+AR Path="/618B5637/5FB59F1D" Ref="U6"  Part="1" 
+F 0 "U5" H 4200 4400 50  0000 C CNN
+F 1 "TC4427A" H 4100 4300 50  0000 C CNN
+F 2 "" H 4500 3100 50  0001 L CNN
+F 3 "http://www.intersil.com/content/dam/Intersil/documents/icl7/icl7667.pdf" H 4550 3650 50  0001 C CNN
+F 4 "X" H 4350 3950 50  0001 C CNN "Spice_Primitive"
+F 5 "TC4426_I2D_B" H 4350 3950 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 4350 3950 50  0001 C CNN "Spice_Netlist_Enabled"
+F 7 "2 7 6 3" H 4350 3950 50  0001 C CNN "Spice_Node_Sequence"
+F 8 "TC4426_Rev2_SPICE_Model.MOD" H 4350 3950 50  0001 C CNN "Spice_Lib_File"
+	1    4350 3950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5100 3850 5350 3850
+Wire Wire Line
+	4750 3250 4700 3250
+Wire Wire Line
+	4700 3850 4650 3850
+Wire Wire Line
+	4650 4050 4700 4050
+Wire Wire Line
+	5350 4050 5050 4050
+Wire Wire Line
+	5050 4050 5050 4100
+$Comp
+L power:GND #PWR?
+U 1 1 5FB59F2A
+P 4350 4350
+AR Path="/5FB59F2A" Ref="#PWR?"  Part="1" 
+AR Path="/5FB4FEC9/5FB59F2A" Ref="#PWR015"  Part="1" 
+AR Path="/5FBC52CA/5FB59F2A" Ref="#PWR021"  Part="1" 
+AR Path="/5FBC797C/5FB59F2A" Ref="#PWR027"  Part="1" 
+AR Path="/5FBC8293/5FB59F2A" Ref="#PWR033"  Part="1" 
+AR Path="/618A2361/5FB4FEC9/5FB59F2A" Ref="#PWR?"  Part="1" 
+AR Path="/618A2361/5FBC52CA/5FB59F2A" Ref="#PWR?"  Part="1" 
+AR Path="/618A2361/5FBC797C/5FB59F2A" Ref="#PWR?"  Part="1" 
+AR Path="/618A2361/5FBC8293/5FB59F2A" Ref="#PWR?"  Part="1" 
+AR Path="/618B560C/5FB59F2A" Ref="#PWR021"  Part="1" 
+AR Path="/618B562D/5FB59F2A" Ref="#PWR030"  Part="1" 
+AR Path="/618B5632/5FB59F2A" Ref="#PWR039"  Part="1" 
+AR Path="/618B5637/5FB59F2A" Ref="#PWR048"  Part="1" 
+F 0 "#PWR015" H 4350 4100 50  0001 C CNN
+F 1 "GND" H 4355 4177 50  0000 C CNN
+F 2 "" H 4350 4350 50  0001 C CNN
+F 3 "" H 4350 4350 50  0001 C CNN
+	1    4350 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5FB59F36
+P 3700 3600
+AR Path="/5FB59F36" Ref="#PWR?"  Part="1" 
+AR Path="/5FB4FEC9/5FB59F36" Ref="#PWR014"  Part="1" 
+AR Path="/5FBC52CA/5FB59F36" Ref="#PWR020"  Part="1" 
+AR Path="/5FBC797C/5FB59F36" Ref="#PWR026"  Part="1" 
+AR Path="/5FBC8293/5FB59F36" Ref="#PWR032"  Part="1" 
+AR Path="/618A2361/5FB4FEC9/5FB59F36" Ref="#PWR?"  Part="1" 
+AR Path="/618A2361/5FBC52CA/5FB59F36" Ref="#PWR?"  Part="1" 
+AR Path="/618A2361/5FBC797C/5FB59F36" Ref="#PWR?"  Part="1" 
+AR Path="/618A2361/5FBC8293/5FB59F36" Ref="#PWR?"  Part="1" 
+AR Path="/618B560C/5FB59F36" Ref="#PWR020"  Part="1" 
+AR Path="/618B562D/5FB59F36" Ref="#PWR029"  Part="1" 
+AR Path="/618B5632/5FB59F36" Ref="#PWR038"  Part="1" 
+AR Path="/618B5637/5FB59F36" Ref="#PWR047"  Part="1" 
+F 0 "#PWR014" H 3700 3350 50  0001 C CNN
+F 1 "GND" H 3705 3427 50  0000 C CNN
+F 2 "" H 3700 3600 50  0001 C CNN
+F 3 "" H 3700 3600 50  0001 C CNN
+	1    3700 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4700 4300 4750 4300
+Wire Wire Line
+	4700 3850 4700 3250
+Wire Wire Line
+	4700 4050 4700 4300
+Wire Wire Line
+	5250 2950 5250 3650
+Text HLabel 3200 3850 0    50   Input ~ 0
+TX+
+Text HLabel 3200 4050 0    50   Input ~ 0
+TX-
+Text HLabel 3150 2650 0    50   Output ~ 0
+RX
+Wire Wire Line
+	3200 3850 3350 3850
+Wire Wire Line
+	3200 4050 3400 4050
+Wire Wire Line
+	6700 4150 6700 4400
+Wire Wire Line
+	6700 3550 6700 2650
+Connection ~ 6700 3550
+Wire Wire Line
+	6700 3550 7000 3550
+Text GLabel 5100 3850 0    50   Input ~ 0
+TF_PWR
+$Comp
+L power:+9V #PWR013
+U 1 1 5FBC2685
+P 3700 3200
+AR Path="/5FB4FEC9/5FBC2685" Ref="#PWR013"  Part="1" 
+AR Path="/5FBC52CA/5FBC2685" Ref="#PWR019"  Part="1" 
+AR Path="/5FBC797C/5FBC2685" Ref="#PWR025"  Part="1" 
+AR Path="/5FBC8293/5FBC2685" Ref="#PWR031"  Part="1" 
+AR Path="/618A2361/5FB4FEC9/5FBC2685" Ref="#PWR?"  Part="1" 
+AR Path="/618A2361/5FBC52CA/5FBC2685" Ref="#PWR?"  Part="1" 
+AR Path="/618A2361/5FBC797C/5FBC2685" Ref="#PWR?"  Part="1" 
+AR Path="/618A2361/5FBC8293/5FBC2685" Ref="#PWR?"  Part="1" 
+AR Path="/618B560C/5FBC2685" Ref="#PWR019"  Part="1" 
+AR Path="/618B562D/5FBC2685" Ref="#PWR028"  Part="1" 
+AR Path="/618B5632/5FBC2685" Ref="#PWR037"  Part="1" 
+AR Path="/618B5637/5FBC2685" Ref="#PWR046"  Part="1" 
+F 0 "#PWR013" H 3700 3050 50  0001 C CNN
+F 1 "+9V" H 3715 3373 50  0000 C CNN
+F 2 "" H 3700 3200 50  0001 C CNN
+F 3 "" H 3700 3200 50  0001 C CNN
+	1    3700 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3700 3200 3700 3250
+Text Notes 2500 4250 0    50   ~ 0
+level shift MCU IO to battery voltage
+$Comp
+L Device:R_US R?
+U 1 1 616A4B97
+P 4750 2650
+AR Path="/616A4B97" Ref="R?"  Part="1" 
+AR Path="/5FB4FEC9/616A4B97" Ref="R2"  Part="1" 
+AR Path="/5FBC52CA/616A4B97" Ref="R4"  Part="1" 
+AR Path="/5FBC797C/616A4B97" Ref="R6"  Part="1" 
+AR Path="/5FBC8293/616A4B97" Ref="R8"  Part="1" 
+AR Path="/618A2361/5FB4FEC9/616A4B97" Ref="R?"  Part="1" 
+AR Path="/618A2361/5FBC52CA/616A4B97" Ref="R?"  Part="1" 
+AR Path="/618A2361/5FBC797C/616A4B97" Ref="R?"  Part="1" 
+AR Path="/618A2361/5FBC8293/616A4B97" Ref="R?"  Part="1" 
+AR Path="/618B560C/616A4B97" Ref="R2"  Part="1" 
+AR Path="/618B562D/616A4B97" Ref="R4"  Part="1" 
+AR Path="/618B5632/616A4B97" Ref="R6"  Part="1" 
+AR Path="/618B5637/616A4B97" Ref="R8"  Part="1" 
+F 0 "R2" H 4818 2696 50  0000 L CNN
+F 1 "10k" H 4818 2605 50  0000 L CNN
+F 2 "" V 4790 2640 50  0001 C CNN
+F 3 "~" H 4750 2650 50  0001 C CNN
+	1    4750 2650
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3150 2650 3400 2650
+Wire Wire Line
+	4900 2650 6700 2650
+Text Notes 4250 2300 0    50   ~ 0
+current limiting resistor\nI < 100 V / R, peak
+$Comp
+L Device:D_Zener D1
+U 1 1 6183CD8D
+P 3400 2850
+AR Path="/5FB4FEC9/6183CD8D" Ref="D1"  Part="1" 
+AR Path="/5FBC52CA/6183CD8D" Ref="D2"  Part="1" 
+AR Path="/5FBC797C/6183CD8D" Ref="D3"  Part="1" 
+AR Path="/5FBC8293/6183CD8D" Ref="D4"  Part="1" 
+AR Path="/618A2361/5FB4FEC9/6183CD8D" Ref="D?"  Part="1" 
+AR Path="/618A2361/5FBC52CA/6183CD8D" Ref="D?"  Part="1" 
+AR Path="/618A2361/5FBC797C/6183CD8D" Ref="D?"  Part="1" 
+AR Path="/618A2361/5FBC8293/6183CD8D" Ref="D?"  Part="1" 
+AR Path="/618B560C/6183CD8D" Ref="D1"  Part="1" 
+AR Path="/618B562D/6183CD8D" Ref="D2"  Part="1" 
+AR Path="/618B5632/6183CD8D" Ref="D3"  Part="1" 
+AR Path="/618B5637/6183CD8D" Ref="D4"  Part="1" 
+F 0 "D1" V 3354 2929 50  0000 L CNN
+F 1 "DDZ9678-7" V 3445 2929 50  0000 L CNN
+F 2 "Diode_SMD:D_SOD-123" H 3400 2850 50  0001 C CNN
+F 3 "https://www.diodes.com/assets/Datasheets/ds30410.pdf" H 3400 2850 50  0001 C CNN
+F 4 "X" H 3400 2850 50  0001 C CNN "Spice_Primitive"
+F 5 "DDZ9678" H 3400 2850 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 3400 2850 50  0001 C CNN "Spice_Netlist_Enabled"
+F 7 "DDZ9678.spice.txt" H 3400 2850 50  0001 C CNN "Spice_Lib_File"
+	1    3400 2850
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3400 2700 3400 2650
+Connection ~ 3400 2650
+Wire Wire Line
+	3400 2650 4600 2650
+$Comp
+L power:GND #PWR?
+U 1 1 6183EAEB
+P 3400 3100
+AR Path="/6183EAEB" Ref="#PWR?"  Part="1" 
+AR Path="/5FB4FEC9/6183EAEB" Ref="#PWR047"  Part="1" 
+AR Path="/5FBC52CA/6183EAEB" Ref="#PWR050"  Part="1" 
+AR Path="/5FBC797C/6183EAEB" Ref="#PWR053"  Part="1" 
+AR Path="/5FBC8293/6183EAEB" Ref="#PWR056"  Part="1" 
+AR Path="/618A2361/5FB4FEC9/6183EAEB" Ref="#PWR?"  Part="1" 
+AR Path="/618A2361/5FBC52CA/6183EAEB" Ref="#PWR?"  Part="1" 
+AR Path="/618A2361/5FBC797C/6183EAEB" Ref="#PWR?"  Part="1" 
+AR Path="/618A2361/5FBC8293/6183EAEB" Ref="#PWR?"  Part="1" 
+AR Path="/618B560C/6183EAEB" Ref="#PWR017"  Part="1" 
+AR Path="/618B562D/6183EAEB" Ref="#PWR026"  Part="1" 
+AR Path="/618B5632/6183EAEB" Ref="#PWR035"  Part="1" 
+AR Path="/618B5637/6183EAEB" Ref="#PWR044"  Part="1" 
+F 0 "#PWR047" H 3400 2850 50  0001 C CNN
+F 1 "GND" H 3405 2927 50  0000 C CNN
+F 2 "" H 3400 3100 50  0001 C CNN
+F 3 "" H 3400 3100 50  0001 C CNN
+	1    3400 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3400 3100 3400 3000
+Text Notes 3050 2500 0    50   ~ 0
+use low V zener to reduce BOM size
+$Comp
+L pspice:VSOURCE V3
+U 1 1 6185CF6B
+P 1450 4000
+AR Path="/5FB4FEC9/6185CF6B" Ref="V3"  Part="1" 
+AR Path="/5FBC52CA/6185CF6B" Ref="V5"  Part="1" 
+AR Path="/5FBC797C/6185CF6B" Ref="V7"  Part="1" 
+AR Path="/5FBC8293/6185CF6B" Ref="V9"  Part="1" 
+AR Path="/618A2361/5FB4FEC9/6185CF6B" Ref="V?"  Part="1" 
+AR Path="/618A2361/5FBC52CA/6185CF6B" Ref="V?"  Part="1" 
+AR Path="/618A2361/5FBC797C/6185CF6B" Ref="V?"  Part="1" 
+AR Path="/618A2361/5FBC8293/6185CF6B" Ref="V?"  Part="1" 
+AR Path="/618B560C/6185CF6B" Ref="V1"  Part="1" 
+AR Path="/618B562D/6185CF6B" Ref="V3"  Part="1" 
+AR Path="/618B5632/6185CF6B" Ref="V5"  Part="1" 
+AR Path="/618B5637/6185CF6B" Ref="V7"  Part="1" 
+F 0 "V3" H 1678 4046 50  0000 L CNN
+F 1 "VSOURCE" H 1678 3955 50  0000 L CNN
+F 2 "" H 1450 4000 50  0001 C CNN
+F 3 "" H 1450 4000 50  0001 C CNN
+F 4 "V" H 1450 4000 50  0001 C CNN "Spice_Primitive"
+F 5 "pulse(0 3.3 10us 50n 50n 5u 10u)" H 1450 4000 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 1450 4000 50  0001 C CNN "Spice_Netlist_Enabled"
+	1    1450 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1450 3700 1450 3650
+Wire Wire Line
+	1450 3650 3350 3650
+Wire Wire Line
+	3350 3650 3350 3850
+Connection ~ 3350 3850
+Wire Wire Line
+	3350 3850 4050 3850
+$Comp
+L pspice:VSOURCE V4
+U 1 1 6185F97B
+P 3400 4800
+AR Path="/5FB4FEC9/6185F97B" Ref="V4"  Part="1" 
+AR Path="/5FBC52CA/6185F97B" Ref="V6"  Part="1" 
+AR Path="/5FBC797C/6185F97B" Ref="V8"  Part="1" 
+AR Path="/5FBC8293/6185F97B" Ref="V10"  Part="1" 
+AR Path="/618A2361/5FB4FEC9/6185F97B" Ref="V?"  Part="1" 
+AR Path="/618A2361/5FBC52CA/6185F97B" Ref="V?"  Part="1" 
+AR Path="/618A2361/5FBC797C/6185F97B" Ref="V?"  Part="1" 
+AR Path="/618A2361/5FBC8293/6185F97B" Ref="V?"  Part="1" 
+AR Path="/618B560C/6185F97B" Ref="V2"  Part="1" 
+AR Path="/618B562D/6185F97B" Ref="V4"  Part="1" 
+AR Path="/618B5632/6185F97B" Ref="V6"  Part="1" 
+AR Path="/618B5637/6185F97B" Ref="V8"  Part="1" 
+F 0 "V4" H 3628 4846 50  0000 L CNN
+F 1 "VSOURCE" H 3628 4755 50  0000 L CNN
+F 2 "" H 3400 4800 50  0001 C CNN
+F 3 "" H 3400 4800 50  0001 C CNN
+F 4 "V" H 3400 4800 50  0001 C CNN "Spice_Primitive"
+F 5 "pulse(0 3.3 20us 50n 50n 5u 10u)" H 3400 4800 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 3400 4800 50  0001 C CNN "Spice_Netlist_Enabled"
+	1    3400 4800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3400 4500 3400 4050
+Connection ~ 3400 4050
+Wire Wire Line
+	3400 4050 4050 4050
+$Comp
+L power:GND #PWR?
+U 1 1 618611A3
+P 3400 5100
+AR Path="/618611A3" Ref="#PWR?"  Part="1" 
+AR Path="/5FB4FEC9/618611A3" Ref="#PWR048"  Part="1" 
+AR Path="/5FBC52CA/618611A3" Ref="#PWR051"  Part="1" 
+AR Path="/5FBC797C/618611A3" Ref="#PWR054"  Part="1" 
+AR Path="/5FBC8293/618611A3" Ref="#PWR057"  Part="1" 
+AR Path="/618A2361/5FB4FEC9/618611A3" Ref="#PWR?"  Part="1" 
+AR Path="/618A2361/5FBC52CA/618611A3" Ref="#PWR?"  Part="1" 
+AR Path="/618A2361/5FBC797C/618611A3" Ref="#PWR?"  Part="1" 
+AR Path="/618A2361/5FBC8293/618611A3" Ref="#PWR?"  Part="1" 
+AR Path="/618B560C/618611A3" Ref="#PWR018"  Part="1" 
+AR Path="/618B562D/618611A3" Ref="#PWR027"  Part="1" 
+AR Path="/618B5632/618611A3" Ref="#PWR036"  Part="1" 
+AR Path="/618B5637/618611A3" Ref="#PWR045"  Part="1" 
+F 0 "#PWR048" H 3400 4850 50  0001 C CNN
+F 1 "GND" H 3405 4927 50  0000 C CNN
+F 2 "" H 3400 5100 50  0001 C CNN
+F 3 "" H 3400 5100 50  0001 C CNN
+	1    3400 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 61861614
+P 1450 4300
+AR Path="/61861614" Ref="#PWR?"  Part="1" 
+AR Path="/5FB4FEC9/61861614" Ref="#PWR046"  Part="1" 
+AR Path="/5FBC52CA/61861614" Ref="#PWR049"  Part="1" 
+AR Path="/5FBC797C/61861614" Ref="#PWR052"  Part="1" 
+AR Path="/5FBC8293/61861614" Ref="#PWR055"  Part="1" 
+AR Path="/618A2361/5FB4FEC9/61861614" Ref="#PWR?"  Part="1" 
+AR Path="/618A2361/5FBC52CA/61861614" Ref="#PWR?"  Part="1" 
+AR Path="/618A2361/5FBC797C/61861614" Ref="#PWR?"  Part="1" 
+AR Path="/618A2361/5FBC8293/61861614" Ref="#PWR?"  Part="1" 
+AR Path="/618B560C/61861614" Ref="#PWR016"  Part="1" 
+AR Path="/618B562D/61861614" Ref="#PWR025"  Part="1" 
+AR Path="/618B5632/61861614" Ref="#PWR034"  Part="1" 
+AR Path="/618B5637/61861614" Ref="#PWR043"  Part="1" 
+F 0 "#PWR046" H 1450 4050 50  0001 C CNN
+F 1 "GND" H 1455 4127 50  0000 C CNN
+F 2 "" H 1450 4300 50  0001 C CNN
+F 3 "" H 1450 4300 50  0001 C CNN
+	1    1450 4300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3700 3250 4350 3250
+Wire Wire Line
+	4350 3250 4350 3550
+Connection ~ 3700 3250
+Wire Wire Line
+	3700 3250 3700 3300
+$Comp
+L Device:C C?
+U 1 1 5FB59F30
+P 3700 3450
+AR Path="/5FB59F30" Ref="C?"  Part="1" 
+AR Path="/5FB4FEC9/5FB59F30" Ref="C7"  Part="1" 
+AR Path="/5FBC52CA/5FB59F30" Ref="C9"  Part="1" 
+AR Path="/5FBC797C/5FB59F30" Ref="C11"  Part="1" 
+AR Path="/5FBC8293/5FB59F30" Ref="C13"  Part="1" 
+AR Path="/618A2361/5FB4FEC9/5FB59F30" Ref="C?"  Part="1" 
+AR Path="/618A2361/5FBC52CA/5FB59F30" Ref="C?"  Part="1" 
+AR Path="/618A2361/5FBC797C/5FB59F30" Ref="C?"  Part="1" 
+AR Path="/618A2361/5FBC8293/5FB59F30" Ref="C?"  Part="1" 
+AR Path="/618B560C/5FB59F30" Ref="C5"  Part="1" 
+AR Path="/618B562D/5FB59F30" Ref="C7"  Part="1" 
+AR Path="/618B5632/5FB59F30" Ref="C9"  Part="1" 
+AR Path="/618B5637/5FB59F30" Ref="C11"  Part="1" 
+F 0 "C7" H 3815 3496 50  0000 L CNN
+F 1 "100nF" H 3815 3405 50  0000 L CNN
+F 2 "" H 3738 3300 50  0001 C CNN
+F 3 "~" H 3700 3450 50  0001 C CNN
+	1    3700 3450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2750 1350 2750 1200
+Wire Wire Line
+	2750 1850 2750 1750
+$Comp
+L power:GND #PWR?
+U 1 1 618D6E19
+P 3050 1850
+F 0 "#PWR?" H 3050 1600 50  0001 C CNN
+F 1 "GND" H 3055 1677 50  0000 C CNN
+F 2 "" H 3050 1850 50  0001 C CNN
+F 3 "" H 3050 1850 50  0001 C CNN
+	1    3050 1850
+	1    0    0    -1  
+$EndComp
+Connection ~ 3050 1850
+Wire Wire Line
+	3050 1850 2750 1850
+$Comp
+L Device:R_US R?
+U 1 1 618D6E21
+P 3600 1200
+F 0 "R?" H 3668 1246 50  0000 L CNN
+F 1 "100" H 3668 1155 50  0000 L CNN
+F 2 "" V 3640 1190 50  0001 C CNN
+F 3 "~" H 3600 1200 50  0001 C CNN
+	1    3600 1200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2750 1200 3200 1200
+$Comp
+L Device:C C?
+U 1 1 618D6E28
+P 3850 1550
+F 0 "C?" H 3965 1596 50  0000 L CNN
+F 1 "100u" H 3965 1505 50  0000 L CNN
+F 2 "" H 3888 1400 50  0001 C CNN
+F 3 "~" H 3850 1550 50  0001 C CNN
+	1    3850 1550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3850 1400 3850 1200
+Wire Wire Line
+	3850 1200 3750 1200
+Wire Wire Line
+	3850 1700 3850 1850
+Wire Wire Line
+	3050 1850 3200 1850
+Connection ~ 3850 1200
+Wire Wire Line
+	3850 1200 4100 1200
+$Comp
+L Device:C C?
+U 1 1 618D6E34
+P 3200 1500
+F 0 "C?" H 3315 1546 50  0000 L CNN
+F 1 "10uF" H 3315 1455 50  0000 L CNN
+F 2 "" H 3238 1350 50  0001 C CNN
+F 3 "~" H 3200 1500 50  0001 C CNN
+	1    3200 1500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3200 1350 3200 1200
+Connection ~ 3200 1200
+Wire Wire Line
+	3200 1200 3450 1200
+Wire Wire Line
+	3200 1650 3200 1850
+Connection ~ 3200 1850
+Wire Wire Line
+	3200 1850 3850 1850
+Text GLabel 4100 1200 2    50   Input ~ 0
+TF_PWR
+$Comp
+L power:+9V #PWR?
+U 1 1 618D6E41
+P 3200 1100
+F 0 "#PWR?" H 3200 950 50  0001 C CNN
+F 1 "+9V" H 3215 1273 50  0000 C CNN
+F 2 "" H 3200 1100 50  0001 C CNN
+F 3 "" H 3200 1100 50  0001 C CNN
+	1    3200 1100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3200 1100 3200 1200
+$Comp
+L Device:Battery BT?
+U 1 1 618D6E4B
+P 2750 1550
+F 0 "BT?" H 2858 1596 50  0000 L CNN
+F 1 "9 V" H 2858 1505 50  0000 L CNN
+F 2 "" V 2750 1610 50  0001 C CNN
+F 3 "~" V 2750 1610 50  0001 C CNN
+F 4 "I" H 2750 1550 50  0001 C CNN "Spice_Primitive"
+F 5 "dc 9 pwl(0 0 2u 9)" H 2350 1350 50  0000 C CNN "Spice_Model"
+F 6 "Y" H 2750 1550 50  0001 C CNN "Spice_Netlist_Enabled"
+	1    2750 1550
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC

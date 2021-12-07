@@ -1,0 +1,90 @@
+.title KiCad schematic
+.include "/Users/benny/projects/microclimate-sensor/ultrasonic_anenometer/snom097b/LMP7731.LIB"
+.include "2N7002.subcircuit"
+.include "DDZ9678.spice.txt"
+.include "TC4426_Rev2_SPICE_Model.MOD"
+.include "opa2322.lib"
+.include "xf.subcircuit"
+R1 TF_PWR +9V 100
+C2 TF_PWR GND 100u
+C1 +9V GND 10u
+C3 +9V GND 1u
+C4 +3V3 GND 4.7u
+XU3 Net-_U1-Pad49_ Net-_U3-Pad7_ +9V GND TC4426_I2D_B
+C6 +9V GND 4.7u
+C5 +9V GND 100n
+VBT1 +9V GND dc 9; pwl(0 0 5u 9)
+V11 +3V3 GND dc 3.3
+CLS1 Net-_C8-Pad1_ GND 2nF
+R3 GND Net-_C8-Pad1_ 1.8k
+XT1 Net-_M1-Pad3_ TF_PWR Net-_M2-Pad3_ GND Net-_C8-Pad1_ transformer1
+XM1 Net-_M1-Pad3_ Net-_M1-Pad1_ GND N7002
+XM2 Net-_M2-Pad3_ Net-_M2-Pad1_ GND N7002
+C8 Net-_C8-Pad1_ GND 1500p
+XU5 /TXRX1_NORTH/TX+ Net-_M1-Pad1_ +9V GND TC4426_I2D_B
+R2 /TXRX1_NORTH/RX Net-_C8-Pad1_ 10k
+XD1 /TXRX1_NORTH/RX GND DDZ9678
+V3 /TXRX1_NORTH/TX+ GND pulse(0 3.3 10us 50n 50n 5u 10u)
+V4 /TXRX1_NORTH/TX- GND pulse(0 3.3 20us 50n 50n 5u 10u)
+C7 +9V GND 100n
+CLS2 Net-_C10-Pad1_ GND 2nF
+R5 GND Net-_C10-Pad1_ 1.8k
+XT2 Net-_M3-Pad3_ TF_PWR Net-_M4-Pad3_ GND Net-_C10-Pad1_ transformer1
+XM3 Net-_M3-Pad3_ Net-_M3-Pad1_ GND N7002
+XM4 Net-_M4-Pad3_ Net-_M4-Pad1_ GND N7002
+C10 Net-_C10-Pad1_ GND 1500p
+XU6 /TXRX2_SOUTH/TX+ Net-_M3-Pad1_ +9V GND TC4426_I2D_B
+R4 /TXRX2_SOUTH/RX Net-_C10-Pad1_ 10k
+XD2 /TXRX2_SOUTH/RX GND DDZ9678
+V5 /TXRX2_SOUTH/TX+ GND pulse(0 3.3 10us 50n 50n 5u 10u)
+V6 /TXRX2_SOUTH/TX- GND pulse(0 3.3 20us 50n 50n 5u 10u)
+C9 +9V GND 100n
+CLS3 Net-_C12-Pad1_ GND 2nF
+R7 GND Net-_C12-Pad1_ 1.8k
+XT3 Net-_M5-Pad3_ TF_PWR Net-_M6-Pad3_ GND Net-_C12-Pad1_ transformer1
+XM5 Net-_M5-Pad3_ Net-_M5-Pad1_ GND N7002
+XM6 Net-_M6-Pad3_ Net-_M6-Pad1_ GND N7002
+C12 Net-_C12-Pad1_ GND 1500p
+XU7 /TXRX3_EAST/TX+ Net-_M5-Pad1_ +9V GND TC4426_I2D_B
+R6 /TXRX3_EAST/RX Net-_C12-Pad1_ 10k
+XD3 /TXRX3_EAST/RX GND DDZ9678
+V7 /TXRX3_EAST/TX+ GND pulse(0 3.3 10us 50n 50n 5u 10u)
+V8 /TXRX3_EAST/TX- GND pulse(0 3.3 20us 50n 50n 5u 10u)
+C11 +9V GND 100n
+CLS4 Net-_C14-Pad1_ GND 2nF
+R9 GND Net-_C14-Pad1_ 1.8k
+XT4 Net-_M7-Pad3_ TF_PWR Net-_M8-Pad3_ GND Net-_C14-Pad1_ transformer1
+XM7 Net-_M7-Pad3_ Net-_M7-Pad1_ GND N7002
+XM8 Net-_M8-Pad3_ Net-_M8-Pad1_ GND N7002
+C14 Net-_C14-Pad1_ GND 1500p
+XU8 /TXRX4_WEST/TX+ Net-_M7-Pad1_ +9V GND TC4426_I2D_B
+R8 /TXRX4_WEST/RX Net-_C14-Pad1_ 10k
+XD4 /TXRX4_WEST/RX GND DDZ9678
+V9 /TXRX4_WEST/TX+ GND pulse(0 3.3 10us 50n 50n 5u 10u)
+V10 /TXRX4_WEST/TX- GND pulse(0 3.3 20us 50n 50n 5u 10u)
+C13 +9V GND 100n
+C16 /amplifier/VDD_RX GND 4.7u
+C21 Net-_C21-Pad1_ GND 4.7u
+R13 Net-_C25-Pad1_ Net-_C25-Pad2_ 43k
+R11 Net-_C22-Pad1_ Net-_C22-Pad2_ 16k
+C19 Net-_C19-Pad1_ /amplifier/RX_IN 10u
+C25 Net-_C25-Pad1_ Net-_C25-Pad2_ 1p
+C22 Net-_C22-Pad1_ Net-_C22-Pad2_ 1p
+R10 Net-_C22-Pad2_ Net-_C19-Pad1_ 2.2k
+C18 /amplifier/VDD_RX GND 100n
+R15 /amplifier/RX_OUT Net-_C26-Pad2_ 43k
+R14 Net-_C26-Pad2_ Net-_C25-Pad1_ 4.3k
+C26 /amplifier/RX_OUT Net-_C26-Pad2_ 1p
+XU9 Net-_C25-Pad1_ Net-_C25-Pad2_ Net-_C21-Pad1_ GND Net-_C21-Pad1_ Net-_C26-Pad2_ /amplifier/RX_OUT /amplifier/VDD_RX opa2322
+C24 /amplifier/VDD_RX GND 4.7u
+C23 /amplifier/VDD_RX GND 100n
+V2 /amplifier/RX_IN GND ac 1 pwl(0 0 5u 0 6u 3m 10u 3m 11u -3m 15u -3m 16u 0)
+V1 /amplifier/VDD_RX GND dc 5
+XU12 Net-_C21-Pad1_ Net-_C22-Pad2_ /amplifier/VDD_RX GND Net-_C22-Pad1_ LMP7731
+R12 Net-_C25-Pad2_ Net-_C22-Pad1_ 4.3k
+C15 GND +9V 1u
+C17 GND Net-_C17-Pad2_ 100n
+C20 GND /amplifier/VDD_RX 100n
+V12 Net-_C21-Pad1_ GND dc 1.65
+.tran 100n 101u 
+.end
